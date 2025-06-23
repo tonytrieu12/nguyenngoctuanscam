@@ -1,172 +1,310 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thông Báo Sự Việc: Nguyễn Ngọc Tuấn - Founder Transform Group</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scamer Nguyễn Ngọc Tuấn - Founder Transform Group</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
 
-        body {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: #fff;
-            line-height: 1.6;
-            padding: 20px;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    body {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      min-height: 100vh;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+    }
 
-        .container {
-            max-width: 900px;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.18);
-        }
+    .container {
+      width: 100%;
+      max-width: 900px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
 
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
 
-        .header img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #fff;
-            margin-bottom: 15px;
-        }
+    .header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      margin-bottom: 15px;
+    }
 
-        .header h1 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
+    .header h1 {
+      font-size: 2rem;
+    }
 
-        .header p {
-            font-size: 1.1rem;
-            color: #ddd;
-        }
+    .header p {
+      font-size: 1.1rem;
+      color: #ddd;
+    }
 
-        .event {
-            margin-bottom: 30px;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 10px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+    .event {
+      margin-bottom: 30px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s ease;
+    }
 
-        .event:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        }
+    .event:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
 
-        .event h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            color: #f0c14b;
-        }
+    .event h3 {
+      color: #f0c14b;
+      margin-bottom: 10px;
+    }
 
-        .event p {
-            margin-bottom: 15px;
-            color: #e0e0e0;
-        }
+    .event p {
+      color: #e0e0e0;
+      margin-bottom: 15px;
+    }
 
-        .event img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-bottom: 15px;
-            display: block;
-        }
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 10px;
+    }
 
-        .image-placeholder {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 10px;
-            text-align: center;
-            border-radius: 10px;
-            color: #bbb;
-            margin-bottom: 15px;
-        }
+    .image-gallery h4 {
+      width: 100%;
+      margin-bottom: 10px;
+      color: #ddd;
+    }
 
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px;
-            }
+    .image-gallery img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
 
-            .header h1 {
-                font-size: 1.8rem;
-            }
+    .image-gallery img:hover {
+      transform: scale(1.05);
+    }
 
-            .event h3 {
-                font-size: 1.3rem;
-            }
+    .placeholder {
+      width: 100%;
+      font-style: italic;
+      color: #bbb;
+    }
 
-            .event {
-                padding: 15px;
-            }
-        }
-    </style>
+    .modal {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .modal-content {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      max-width: 90%;
+      max-height: 90%;
+      overflow: auto;
+      position: relative;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      animation: fadeIn 0.3s ease;
+    }
+
+    .modal-content img {
+      max-width: 100%;
+      max-height: 60vh;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .modal-content p {
+      color: #eee;
+      font-size: 1rem;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 2rem;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @media (max-width: 768px) {
+      .image-gallery img {
+        max-width: 100%;
+      }
+
+      .header h1 {
+        font-size: 1.5rem;
+      }
+
+      .event h3 {
+        font-size: 1.2rem;
+      }
+
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <img src="https://via.placeholder.com/120" alt="Nguyễn Ngọc Tuấn Avatar">
-            <h1>Nguyễn Ngọc Tuấn - Founder Transform Group</h1>
-            <p>Chuyên nghiệp, liên quan đến số tiền lên tới hàng tỷ đồng</p>
-        </div>
-
-        <div class="event">
-            <h3>Khóa học n8n (3/2025)</h3>
-            <p>Mở đăng ký khóa học n8n vào tháng 3/2025, cam kết khai giảng vào tháng 4/2025, nhưng đến gần tháng 7/2025 vẫn chưa có thông tin. Nhiều học viên nhắn tin hỏi và yêu cầu hoàn tiền nhưng không nhận được phản hồi. Chỉ khi sự việc bị phanh phui, phía Nguyễn Ngọc Tuấn mới bắt đầu xử lý. Về automation, việc gửi email thông báo rất đơn giản nhưng không được thực hiện, kèm theo nhiều lý do biện minh.</p>
-            <div class="image-placeholder">[Chèn link ảnh minh họa sự kiện tại đây]</div>
-        </div>
-
-        <div class="event">
-            <h3>Template Larkbase CRM (2023)</h3>
-            <p>Mở bán template Larkbase CRM nhưng không giao sản phẩm. Sau khi bị cộng đồng phản ánh, một số người mới được hoàn tiền. Sự việc chỉ được giải quyết khi có áp lực từ dư luận.</p>
-            <div class="image-placeholder">[Chèn link ảnh minh họa sự kiện tại đây]</div>
-        </div>
-
-        <div class="event">
-            <h3>Khóa học No-code (2023)</h3>
-            <p>Khóa học No-code được mở bán với giá khoảng 3 triệu đồng/người, nhưng không được tổ chức. Với số lượng học viên đăng ký, số tiền thu về ước tính rất lớn. Không có thông báo hay giải thích rõ ràng từ phía Nguyễn Ngọc Tuấn.</p>
-            <div class="image-placeholder">[Chèn link ảnh minh họa sự kiện tại đây]</div>
-        </div>
-
-        <div class="event">
-            <h3>Dự án Koc.vn (2023)</h3>
-            <p>Triển khai dự án Koc.vn với mức giá 500.000 VNĐ/subdomain, cung cấp nền tảng và dịch vụ affiliate cho các brand, MCM, và creator. Dự kiến có gần 300 slot, tổng số tiền ước tính khoảng 150 tỷ đồng. Tuy nhiên, dự án không được thực hiện, và có thông tin cho rằng đội ngũ phát triển chưa được thanh toán.</p>
-            <div class="image-placeholder">[Chèn link ảnh minh họa sự kiện tại đây]</div>
-        </div>
-
-        <div class="event">
-            <h3>Dự án Smile.vn (2023)</h3>
-            <p>Ra mắt dự án Smile.vn với chương trình Early Bird cho phép đặt áo Larksuite. Tuy nhiên, sau khi thanh toán, khách hàng không nhận được sản phẩm. Không có thông báo hay giải pháp từ phía dự án.</p>
-            <div class="image-placeholder">[Chèn link ảnh minh họa sự kiện tại đây]</div>
-        </div>
-
-        <div class="event">
-            <h3>Cộng đồng Larksuite (2022)</h3>
-            <p>Xây dựng cộng đồng Larksuite gây tranh cãi, ảnh hưởng đến nhiều người làm opensource (Odoo, WordPress,...). Nguyễn Ngọc Tuấn khuyến khích sử dụng phần mềm độc quyền thay vì các giải pháp opensource đã hoạt động ổn định. Đồng thời, ông này bị cho là quảng bá quá mức cho Haravan, nhận hỗ trợ tài chính từ Haravan để mở trụ sở. Sau đó, lại quay về làm opensource, gây mâu thuẫn trong cộng đồng.</p>
-            <div class="image-placeholder">[Chèn link ảnh minh họa sự kiện tại đây]</div>
-        </div>
-
-        <div class="event">
-            <h3>Tư vấn doanh nghiệp</h3>
-            <p>Nguyễn Ngọc Tuấn quảng bá dịch vụ tư vấn vận hành doanh nghiệp dù chưa điều hành thành công doanh nghiệp nào. Các lời quảng cáo thường không đi đôi với thực tế, khiến nhiều người đặt câu hỏi về năng lực và uy tín.</p>
-            <div class="image-placeholder">[Chèn link ảnh minh họa sự kiện tại đây]</div>
-        </div>
+  <div class="container">
+    <div class="header">
+      <img src="https://i.ibb.co/0jmwK1zm/Screenshot-2.png" alt="Avatar" />
+      <h1>Scamer Nguyễn Ngọc Tuấn - Founder Transform Group</h1>
+      <p>Chuyên nghiệp, tận tâm, "vẽ tranh" số hai không ai số 1</p>
     </div>
+	
+	<div class="event">
+      <h3>Thông tin</h3>
+	  <p>Facebook: Nguyen Ngoc Tuan <a href="https://fb.com/100007100762584">xem tại đây</a></p>
+	  <p>Website: Transform<a href="https://www.transform.vn/">xem tại đây</a></p>
+    </div>
+
+    <div class="event">
+      <h3>Khóa học n8n (3/2025)</h3>
+      <p>Mở đăng ký khóa học n8n vào tháng 3/2025, cam kết khai giảng tháng 4/2025, nhưng đến gần tháng 7/2025 vẫn chưa có thông tin.</p>
+	  <p>Nhiều học viên yêu cầu hoàn tiền nhưng không nhận được phản hồi.</p>
+	  <p>Chỉ khi có phốt lên trên công đồng thì mới bắt đầu hoàn tiền.</p>
+	  <p>Thông tin chi tiết mọi người xem <a href="https://drive.google.com/drive/folders/1zpmZNcVlHoLE9xD4E8Q7cWyG3slroOB4?usp=drive_link">tại đây nhé</a></p>
+	  <p>Bài phốt trên cộng đồng mọi người xem <a href="https://www.facebook.com/groups/n8n.automation/posts/9979266645513627/">tại đây</a> và <a href="https://www.facebook.com/groups/n8n.automation/posts/9981346735305618/">tại đây nhé</a></p>
+      <div class="image-gallery">
+        <h4>Bằng chứng</h4>
+        <img src="https://i.ibb.co/QjphjbMp/Ng-y-m-kh-a-h-c.png" alt="Hình ảnh minh họa 1" data-description="Thời gian mở đăng ký khóa học">
+        <img src="https://i.ibb.co/yc1S9dVN/509603907-2838208609699368-2792584825285679472-n.png" alt="Hình ảnh minh họa 2" data-description="Hoàn tiền vô trách nhiệm. Không gửi thông báo qua email dù là người làm automation và gửi mail tầm 1 phút là xong. Lý do bận ... bận con cặc">
+		<img src="https://i.ibb.co/wrjzTyK3/Screenshot-3.png" alt="Hình ảnh minh họa 1" data-description="Được hoàn tiền nhờ post bóc phốt">
+		<img src="https://i.ibb.co/fYbPnG6N/510425336-10222297969718113-7803873585852560896-n.jpg" alt="Hình ảnh minh họa 1" data-description="Thật sự ngứa mắt, trả lời thượng đẳng">
+      </div>
+    </div>
+
+    <div class="event">
+      <h3>Template Larkbase CRM (2023)</h3>
+      <p>Mở bán template nhưng không giao sản phẩm. Sau khi cộng đồng phản ánh, một số người mới được hoàn tiền. Sự việc chỉ được xử lý khi có áp lực dư luận.</p>
+	  <p>Tính nhẩm xem nếu template này bán cho 100 200 người thì được bao nhiêu tiền nhỉ.</p>
+	  <p>Bận đéo từ từ 2023 đến 2025 chưa xong.</p>
+      <div class="image-gallery">
+        <h4>Bằng chứng</h4>
+        <img src="https://i.ibb.co/8gjtBjT5/Screenshot-1.png" alt="Ảnh 1" data-description="Đớn hèn ... chưa đến 300K cũng scam.">
+      </div>
+    </div>
+
+    <div class="event">
+      <h3>Khóa học No-code (2023)</h3>
+      <p>Khóa học No-code mở bán 3 triệu đồng/người nhưng không được tổ chức. Không có phản hồi rõ ràng hoặc thông báo chính thức.</p>
+	  <p>Đóng vai bé tập làm toán nhé. 100 người đăng ký thì số tiền là bao nhiêu nhỉ??? Chắc là 250 triệu nhỉ :)</p>
+	  <p>Cũng bận nhỉ bận 2 năm luôn mà.</p>
+      <div class="image-gallery">
+        <h4>Bằng chứng</h4>
+        <img src="https://i.ibb.co/Xf2HT6qL/511054168-122158232438381251-4456134785465765998-n.jpg" alt="Ảnh 3" data-description="Phương Thảo người có tiếng trên cộng đồng còn bị lùa. Cmt đòi tiền đã xóa do Tuấn đã trả tiền và nhờ xóa cmt. Thế những người không có mối quan hệ thì kêu ai hả Tuấn.">
+      </div>
+    </div>
+	
+	<div class="event">
+      <h3>Dự án KOC.VN định giá 5.000.000$ (2023)</h3>
+      <p>Tuấn mở đăng ký với 500K/1subdomain để kiểm khai platform cung cấp các nền tảng và dịch vụ cho brand/MCM/Creator về mảng affilate xong cũng không thấy đâu</p>
+	  <p>283 người mua với 500.000đ / 1 đơn hàng thì nó là gần 150 triệu rồi :) </p>
+      <div class="image-gallery">
+        <h4>Bằng chứng</h4>
+        <img src="https://i.ibb.co/LdZzwvNN/509763045-2838208703032692-5361390676233279552-n.png" alt="Ảnh 3" data-description="Roadmap đỉnh chưa, có giống như roadmap của coin không :) Định giá 5Tr$. Có thể bạn chưa biết là Tuấn từng làm coin :)">
+		<img src="https://i.ibb.co/8gZGzn0Q/509601915-2838209343032628-5543821614188201360-n.png" alt="Ảnh 3" data-description="Thời gian lauching dự án">
+		<img src="https://i.ibb.co/mFbnWF5M/509598982-2838209126365983-6440578270539478451-n.png" alt="Ảnh 3" data-description="Thời gian lauching dự án">
+		<img src="https://i.ibb.co/39L4YP9F/503697009-2838209453032617-3735276278605793024-n.png" alt="Ảnh 3" data-description="3 ngày bán subdomain KOC.VN được 283 lượt mua">
+		<img src="https://i.ibb.co/Kp494BkS/509747414-2838209246365971-2252940452238829682-n.png" alt="Ảnh 3" data-description="Vì sao nhãn hàng nên chọn KOC.VN vì chọn là mất 500K">
+      </div>
+    </div>
+	
+	<div class="event">
+      <h3>Dự án SMILE.VN định giá 2.000.000$ (2023)</h3>
+      <p>Đỉnh cao là EARLY BIRD cho đặt áo Larksuite trên đó xong cũng không thấy gì. Thanh toán nhưng không thấy giao hàng.</p>
+      <div class="image-gallery">
+        <h4>Bằng chứng</h4>
+        <img src="https://i.ibb.co/TxdQzTFn/509849854-2838209613032601-8577655722783754741-n.png" alt="Ảnh 3" data-description="400K 1 áo, mà chưa giao hiu biu">
+		<img src="https://i.ibb.co/cK40jXHs/510229335-2838209643032598-2541696589035080081-n.png" alt="Ảnh 3" data-description="Động lực để xây cty bán lẻ nó để Tuấn thành họa sĩ">
+		<img src="https://i.ibb.co/7xq2nHqY/509353405-2838209503032612-1664165226038842266-n.png" alt="Ảnh 3" data-description="Hội tụ tinh hoa định giá 2M$">
+      </div>
+    </div>
+  
+  
+    <div class="event">
+      <h3>Build cộng đồng Larksuite (2022)</h3>
+      <p>Ông này build cái cộng đồng lark thì khi này đá hết chén cơm của anh em làm opensource (odoo, wordpress ...) kêu phải dùng phần mềm hoàn chỉnh cùng hệ sinh thái trong khi các bên khác trước giờ làm vẫn ok ...</p>
+	  <p>Luôn fomo haravan, cái méo gì cũng haravan trong khi dùng như cc (ông này chơi với haravan đc rót tiền mở trụ sở nhé) này mình nghe phong thanh được.</p>
+	  <p>Anh em builder trên cộng đồng Larksuite chia sẻ rất nhiệt tình như cũng bị đì hết -> anh em di tản, đóng bài chia sẻ.</p>
+	  <p>Lúc build cộng đồng thì nói với anh em builder là các chú xây dựng cộng đồng rồi kiếm khách làm dịch vụ, dạy học ... anh chỉ bán license thôi. Xong được thời gian Tuấn làm dịch vụ, mở lớp ... ăn cả cứt của anh em builder.</p>
+	  <p>Nhân viên cốt cán đi hết giờ còn đéo ai đâu.</p>
+	  <p>Xong một hồi chê opensource giờ lại quay lại làm opensoruce.</p>
+	  <p>2022 chê hệ sinh thái của Google là lởm tung hô Larksuite. Đến giờ lại khen app sheet ngon (app sheet là sản phẩm của Google). Bộ đầu có điện nên ngáo à. Không nhất quán trong lời nói thế Tuấn.</p>
+	  <p>Chưa làm chủ cái doanh nghiệp nào cũng đi tư vấn vận hành cho doanh nghiệp được, hót thì hay. Xem cái doanh nghiệp của ông ý hiện tại đang như nào. Nhân sự thì nghỉ hết, văn phòng thì sắp dẹp, lưa thưa vài người. Thế mà đi tư vấn??? tư vấn cái cc.</p>
+	  <p>Đỉnh điểm là hồi đó hay đi chê các web của các bên, phân tích như chuyên gia trong khi cái web koc.vn, smile.vn làm như cái lồn mà cũng đi chê..</p>
+    <h3>Anh em mua khoa khóa học, sản phẩm của Tuấn mà Tuấn chưa giao thì đòi hoàn tiền đi nhé.</h3>
+	<h3>Cầm tiền người khác không thấy bứt dứt lương tâm à Tuấn.</h3>
+	</div>
+  </div>
+</div>
+
+  <!-- Modal viewer -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="" alt="Hình mở rộng" id="modal-image" />
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById("modal");
+    const modalImage = document.getElementById("modal-image");
+    const modalDesc = document.getElementById("modal-desc");
+    const closeBtn = document.querySelector(".close");
+
+    document.querySelectorAll(".image-gallery img").forEach(img => {
+      img.addEventListener("click", () => {
+        modalImage.src = img.src;
+        modalDesc.innerText = img.dataset.description || img.alt;
+        modal.style.display = "flex";
+      });
+    });
+
+    closeBtn.addEventListener("click", () => modal.style.display = "none");
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) modal.style.display = "none";
+    });
+  </script>
 </body>
 </html>
