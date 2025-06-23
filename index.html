@@ -1,10 +1,172 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>Trang Landing Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Báo Sự Việc: Nguyễn Ngọc Tuấn - Founder Transform Group</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #fff;
+            margin-bottom: 15px;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: #ddd;
+        }
+
+        .event {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .event:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .event h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #f0c14b;
+        }
+
+        .event p {
+            margin-bottom: 15px;
+            color: #e0e0e0;
+        }
+
+        .event img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .image-placeholder {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            color: #bbb;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .event h3 {
+                font-size: 1.3rem;
+            }
+
+            .event {
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Chào mừng đến với sản phẩm của tôi!</h1>
+    <div class="container">
+        <div class="header">
+            <img src="https://via.placeholder.com/120" alt="Nguyễn Ngọc Tuấn Avatar">
+            <h1>Nguyễn Ngọc Tuấn - Founder Transform Group</h1>
+            <p>Chuyên nghiệp, liên quan đến số tiền lên tới hàng tỷ đồng</p>
+        </div>
+
+        <div class="event">
+            <h3>Khóa học n8n (3/2025)</h3>
+            <p>Mở đăng ký khóa học n8n vào tháng 3/2025, cam kết khai giảng vào tháng 4/2025, nhưng đến gần tháng 7/2025 vẫn chưa có thông tin. Nhiều học viên nhắn tin hỏi và yêu cầu hoàn tiền nhưng không nhận được phản hồi. Chỉ khi sự việc bị phanh phui, phía Nguyễn Ngọc Tuấn mới bắt đầu xử lý. Về automation, việc gửi email thông báo rất đơn giản nhưng không được thực hiện, kèm theo nhiều lý do biện minh.</p>
+            <div class="image-placeholder">[Chèn link ảnh minh họa sự kiện tại đây]</div>
+        </div>
+
+        <div class="event">
+            <h3>Template Larkbase CRM (2023)</h3>
+            <p>Mở bán template Larkbase CRM nhưng không giao sản phẩm. Sau khi bị cộng đồng phản ánh, một số người mới được hoàn tiền. Sự việc chỉ được giải quyết khi có áp lực từ dư luận.</p>
+            <div class="image-placeholder">[Chèn link ảnh minh họa sự kiện tại đây]</div>
+        </div>
+
+        <div class="event">
+            <h3>Khóa học No-code (2023)</h3>
+            <p>Khóa học No-code được mở bán với giá khoảng 3 triệu đồng/người, nhưng không được tổ chức. Với số lượng học viên đăng ký, số tiền thu về ước tính rất lớn. Không có thông báo hay giải thích rõ ràng từ phía Nguyễn Ngọc Tuấn.</p>
+            <div class="image-placeholder">[Chèn link ảnh minh họa sự kiện tại đây]</div>
+        </div>
+
+        <div class="event">
+            <h3>Dự án Koc.vn (2023)</h3>
+            <p>Triển khai dự án Koc.vn với mức giá 500.000 VNĐ/subdomain, cung cấp nền tảng và dịch vụ affiliate cho các brand, MCM, và creator. Dự kiến có gần 300 slot, tổng số tiền ước tính khoảng 150 tỷ đồng. Tuy nhiên, dự án không được thực hiện, và có thông tin cho rằng đội ngũ phát triển chưa được thanh toán.</p>
+            <div class="image-placeholder">[Chèn link ảnh minh họa sự kiện tại đây]</div>
+        </div>
+
+        <div class="event">
+            <h3>Dự án Smile.vn (2023)</h3>
+            <p>Ra mắt dự án Smile.vn với chương trình Early Bird cho phép đặt áo Larksuite. Tuy nhiên, sau khi thanh toán, khách hàng không nhận được sản phẩm. Không có thông báo hay giải pháp từ phía dự án.</p>
+            <div class="image-placeholder">[Chèn link ảnh minh họa sự kiện tại đây]</div>
+        </div>
+
+        <div class="event">
+            <h3>Cộng đồng Larksuite (2022)</h3>
+            <p>Xây dựng cộng đồng Larksuite gây tranh cãi, ảnh hưởng đến nhiều người làm opensource (Odoo, WordPress,...). Nguyễn Ngọc Tuấn khuyến khích sử dụng phần mềm độc quyền thay vì các giải pháp opensource đã hoạt động ổn định. Đồng thời, ông này bị cho là quảng bá quá mức cho Haravan, nhận hỗ trợ tài chính từ Haravan để mở trụ sở. Sau đó, lại quay về làm opensource, gây mâu thuẫn trong cộng đồng.</p>
+            <div class="image-placeholder">[Chèn link ảnh minh họa sự kiện tại đây]</div>
+        </div>
+
+        <div class="event">
+            <h3>Tư vấn doanh nghiệp</h3>
+            <p>Nguyễn Ngọc Tuấn quảng bá dịch vụ tư vấn vận hành doanh nghiệp dù chưa điều hành thành công doanh nghiệp nào. Các lời quảng cáo thường không đi đôi với thực tế, khiến nhiều người đặt câu hỏi về năng lực và uy tín.</p>
+            <div class="image-placeholder">[Chèn link ảnh minh họa sự kiện tại đây]</div>
+        </div>
+    </div>
 </body>
 </html>
